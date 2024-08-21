@@ -1,0 +1,16 @@
+.emerson-logo__image-box {
+  display: flex;
+  align-items: center; /* Vertically centers the image */
+  justify-content: center; /* Optionally, center horizontally as well */
+  height: 100%; /* Ensure the container takes the full height */
+}
+body {
+  font-family: "Noto Sans", Verdana, Geneva, sans-serif;
+}
+.G002-main-nav .level-1-item {
+  font-weight: 500;
+}
+.btn-br
+{
+    border-radius: 20px;
+}

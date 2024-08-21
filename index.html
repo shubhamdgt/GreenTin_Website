@@ -24,43 +24,7 @@
     <script>
         document.documentElement.className = document.documentElement.className.replace(/no-js/g, 'js');
     </script>
-    <script type="application/javascript">
-        // CoreMedia Cookies
-        delete_cookie("cmLocationTaxonomiesCookie", "/", ".emerson.com");
-        delete_cookie("cmKeywordCookie", "/", ".emerson.com");
-        delete_cookie("cmSubjectTaxonomiesCookie", "/", ".emerson.com");
-        delete_cookie("cmLastVisited", "/", ".emerson.com");
-        delete_cookie("cmReferrerCookie", "/", ".emerson.com");
-        delete_cookie("EMR_INFERRED_LOCALE", "/", ".emerson.com");
-        delete_cookie("EMR_CURRENT_SITE", "/", ".emerson.com");
-        delete_cookie("cmCookieDisplay", "/", ".emerson.com");
-
-        function delete_cookie(name, path, domain) {
-            if (get_cookie(name)) {
-                document.cookie = name + "=\"toBeDeleted\"" +
-                    ((path) ? ";path=" + path : "") +
-                    ((domain) ? ";domain=" + domain : "") +
-                    ";expires=Thu, 01 Jan 1970 00:00:01 GMT";
-            }
-        }
-
-        function get_cookie(cname) {
-            var name = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie);
-            var ca = decodedCookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-    </script>
-    
+  
 
     <!-- End VWO Async SmartCode -->
     <link rel="preload" href="./resource/themes/emerson/css/bootstrap-7070700-4.css" as="style" />
@@ -69,127 +33,16 @@
     <link rel="stylesheet" href="./resource/themes/emerson/css/emerson-7070702-102.css" />
     <link rel="preload" href="./resource/themes/emerson/css/emr-font-7427360-3.css" as="font" />
     <link rel="stylesheet" href="./resource/themes/emerson/css/emr-font-7427360-3.css" />
+    <link rel="stylesheet" href="./resource/themes/emerson/css/style.css" />
     <!-- emerson-base-templates -->
     <script src="./resource/themes/emerson/js/commons-7070692-12.js"></script>
     <!-- emerson-base-templates -->
     <script src="./resource/themes/emerson/js/head-7070696-27.js"></script>
     <!-- Google Tag Manager -->
-    <script>
-        // Define dataLayer and the gtag function.
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        //Defining Google Consent Mode
-        gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'analytics_storage': 'granted',
-            'functionality_storage': 'granted',
-            'personalization_storage': 'granted',
-            'security_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted'
-        });
-
-        function gtmScript() {
-            let googleAuthId = "QhQtO94pfj3WCFVCJDfwhA";
-            let googlePreviewId = "env-2";
-            let googleCookiesWin = "x";
-            let googleTagId = "GTM-WN8SBGP";
-            if (window.location.href.indexOf("https://s") > -1 || window.location.href.indexOf("https://d") > -1 ||
-                window.location.href.indexOf("local") > -1 || window.location.href.indexOf("tlkemr") > -1) {
-                googleAuthId = "Oq-t7f7IygYWxjOdS41yFQ";
-                googlePreviewId = "env-67";
-                googleCookiesWin = "x";
-                googleTagId = "GTM-WN8SBGP";
-            }
-            let gtmScriptTxt = document.createElement('script');
-            gtmScriptTxt.text = '(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':' + '\n' +
-                'new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],' + '\n' +
-                'j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=' + '\n' +
-                '\'https://www.googletagmanager.com/gtm.js?id=\'+i+dl+ \'&gtm_auth=' + googleAuthId + '&gtm_preview=' + googlePreviewId + '&gtm_cookies_win=' + googleCookiesWin + '\';f.parentNode.insertBefore(j,f);' + '\n' +
-                '})(window,document,\'script\',\'dataLayer\',\'' + googleTagId + '\');' + '\n';
-            document.head.appendChild(gtmScriptTxt);
-        }
-        gtmScript();
-    </script>
-    <script>
-        function createGAUid() {
-            let currentUId = "";
-            //Expire existing Cookie to avoid overlap
-            document.cookie = "WC_GAUserId=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;";
-            //Create new cookie for CM
-            document.cookie = "WC_GAUserId = GAUserId_" + currentUId + "; path=/";
-        }
-        createGAUid();
-    </script>
-    <script type="text/javascript">
-        <!--
-        // cm-pageview
-        if (typeof digitalData === "undefined") {
-            digitalData = {};
-        }
-        digitalData = {
-            pageInstanceID: 'core-media-landing-page',
-            page: {
-                pageInfo: {
-                    pageID: document.title,
-                    onsiteSearchTerm: '',
-                    onsiteSearchResults: ''
-                },
-                category: {
-                    primaryCategory: 'coremedia-1206226'
-                },
-                attributes: {
-                    exploreAttributes: 'attr1',
-                    extraFields: ''
-                }
-            },
-            component: new Array()
-        };
-        digitalData.event = new Array();
-        //-->
-        digitalData.page = {
-            attributes: {
-                exploreAttributes: '-_--_--_--_--_--_--_--_--_-' + coreMetricsCustom.getDomainExt(document.domain) + '-_-' + coreMetricsCustom.getLanguageLocale(document.location.pathname),
-                extraFields: ''
-            },
-            category: {
-                primaryCategory: 'coremedia-1206226'
-            },
-            pageInfo: {
-                onsiteSearchResults: '',
-                onsiteSearchTerm: '',
-                pageID: document.title
-            }
-        };
-        digitalData.pageInstanceID = 'core-media-landing-page';
-        digitalData.additionalPageInfo = {};
-        digitalData.additionalPageInfo = {
-            group: '',
-            business_group: '',
-            brand: '',
-            product_category: '',
-            pageType: '',
-            industryApplication: '',
-            industrySegment: '',
-            industrySolutions: '',
-            languageLocale: coreMetricsCustom.getLanguageLocale(document.location.pathname)
-        };
-    </script>
-    <script>
-        var brightcoveAccountId;
-
-        function initializeBrightcoveLib() {
-            brightcoveAccountId = 2270581185001;
-        }
-        initializeBrightcoveLib();
-    </script>
 </head>
 
 <body id="top" class="corporate-homepage ">
-    
+
     <!-- Placement: header -->
     <div class="cm-row">
         <header id="cm-header" class="global-header navbar navbar-fixed-top">
@@ -238,7 +91,7 @@ Select
 <svg>
 <path class="locale-icon" xmlns="http://www.w3.org/2000/svg" d="M8 0c1.89 0 3.628.656 4.997 1.752.354.273.678.58.974.913a7.92 7.92 0 0 1-.005.006A7.965 7.965 0 0 1 16 8a7.97 7.97 0 0 1-2.033 5.328l.004.004a8.008 8.008 0 0 1-5.722 2.664L8 16A8 8 0 1 1 8 0zM6.103 12.277l-.134.043c.35 1.03.824 1.79 1.364 2.137v-2.423a6.636 6.636 0 0 0-1.23.243zm2.564-.245v2.425c.54-.348 1.015-1.11 1.366-2.142a6.516 6.516 0 0 0-1.366-.283zm-3.86.787-.17.096c-.22.128-.43.27-.632.421.441.332.925.61 1.442.824a8.329 8.329 0 0 1-.64-1.34zm6.389-.01-.05.133a8.123 8.123 0 0 1-.594 1.218 6.633 6.633 0 0 0 1.452-.829 6.461 6.461 0 0 0-.808-.521zM4.014 8.668H1.366a6.64 6.64 0 0 0 1.645 3.755c.431-.347.9-.65 1.397-.9a14.52 14.52 0 0 1-.394-2.855zm10.62 0h-2.648a14.553 14.553 0 0 1-.392 2.848c.5.25.97.55 1.403.897a6.632 6.632 0 0 0 1.637-3.745zm-7.301-.001H5.347c.033.844.13 1.642.277 2.363a7.924 7.924 0 0 1 1.71-.334l-.001-2.029zm3.32 0H8.666v2.027c.592.048 1.164.16 1.712.33.146-.719.242-1.515.275-2.356zm-7.64-5.088-.096.108a6.638 6.638 0 0 0-1.55 3.647h2.647c.042-1.02.18-1.984.394-2.859a7.89 7.89 0 0 1-1.396-.896zm2.611 1.391-.026.133c-.133.687-.22 1.438-.251 2.231h1.986v-2.03a7.964 7.964 0 0 1-1.709-.334zm4.753.005c-.548.17-1.12.282-1.71.33l-.001 2.029h1.987a14.813 14.813 0 0 0-.276-2.359zm2.618-1.39-.069.057c-.413.323-.859.606-1.332.843.214.872.35 1.833.392 2.849h2.648a6.64 6.64 0 0 0-1.639-3.748zm-4.328-2.04v2.421a6.633 6.633 0 0 0 1.365-.28c-.35-1.033-.825-1.794-1.365-2.142zm-2.66 2.028-.037.108c.437.14.893.236 1.363.283v-2.42c-.52.336-.98 1.055-1.327 2.03zm4.546-1.732.024.041c.23.388.437.826.618 1.306.282-.153.552-.327.808-.518a6.637 6.637 0 0 0-1.45-.83zm-5.105 0-.094.039a6.66 6.66 0 0 0-1.348.782c.254.192.522.365.802.519.187-.495.401-.945.64-1.34z" ></path>
 </svg>
-<data class="locale-desktop-text">IN (EN)</data>
+<data class="locale-desktop-text">Contact</data>
 <data class="locale-mobile-text">India (English)</data>
 </a>
                             </li>
@@ -264,7 +117,7 @@ Select
                         <div class="navbar-brand emerson-logo-box">
                             <a href="/en-in" classBox="" title="" class="emerson-logo__link" aria-label="">
                                 <div class="emerson-logo__image-box">
-                                    <img src="" alt="Emerson Logo" loading="lazy" class="cm-media deferredImage" data-src="/resource/blob/emerson-logo-data-1191220.png" title="">
+                                    <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="/resource/image/greentin/GreenTin-02.jpg" title="" style="height: 60px; width: auto; ">
                                 </div> <span class="cm-visuallyhidden"></span>
                             </a>
                         </div>
@@ -273,8 +126,8 @@ Select
                         <ul class="main-nav list-unstyled">
                             <li>
                                 <div class="G002-platform-strip-item-container">
-                                    <a class="G002-platform-strip-item arrow">
-<span>Products</span>
+                                    <a class="G002-platform-strip-item arrow" >
+<span >Products</span>
 </a>
                                     <div class="G012-flyout-menu level-3-outer-container">
                                         <span class="G012-level-3-mobile-back-link level-3-mobile-back-link">
@@ -5199,63 +5052,7 @@ Contact Us
                             </div>
                         </div>
                     </div>
-                    <div class="search-wrapper">
-                        <div class="search" id="cm-search" tabindex="0">
-                            <form id="cm-search-header-form" class="cm-search cm-search--form" method="post" action="/dynamic/en-in/wcsextendedsearch" role="search" autocomplete="false" data-cm-search="{&quot;urlSuggestions&quot;:&quot;/dynamic/en-in/wcsextendedsearch&quot;,&quot;minLength&quot;:3}">
-                                <label for="cm-search-header-form" class="cm-search__label sr-only" aria-label="search">Search</label>
-                                <input class="search_input" id="SimpleSearchForm_SearchTerm" type="search" name="query" placeholder="Search by model, serial number or keyword" minlength="2" autocomplete="off" required title="Please fill out this field." oninvalid="this.setCustomValidity('Please fill out this field.')"
-                                    oninput="setCustomValidity('')" />
-                                <label class="search_placeholder_ie" aria-label="search">Search by model, serial number or keyword</label>
-                                <input type="hidden" name="cmBusinessSegmentId" value="" />
-                                <input type="hidden" name="wcsBusinessSegmentId" value="" />
-                                <input type="hidden" name="tabSelected" value="" />
-                                <input type="hidden" name="_CSRFToken" value="" />
-                                <div class="open-search">
-                                    <span class="text">
-</span>
-                                    <button type="submit" class="search-submit btn" aria-label="Click to open the search bar" tabindex="0">
-<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-<span class="cm-icon__info sr-only">Search</span>
-</button>
-                                </div>
-                                <div class="close-search btn" aria-label="close" role="button" tabindex="0"></div>
-                            </form>
-                        </div>
-                        <div id="cm-autosuggestions-container" class="cm-search-autosuggestions cm-popup">
-                            <div class="cm-search-suggestions-keywords-category">
-                                <div class="cm-popup cm-popup--search-suggestions-keywords cm-popup--search-suggestions">
-                                    <div class="suggested-keywords-label">Suggested Keywords</div>
-                                    <ul class="cm-search-suggestions">
-                                        <li class="cm-search-suggestions__item" tabindex="-1"></li>
-                                    </ul>
-                                </div>
-                                <div class="cm-popup cm-popup--search-suggestions-category cm-popup--search-suggestions">
-                                    <div class="suggestion-category-label">Suggested Categories</div>
-                                    <ul class="cm-search-suggestions-category">
-                                        <li class="cm-search-suggestions-category__item" tabindex="-1">
-                                            <a class="cm-search-suggestions-category__item-link cm-search-suggestions__item-link" href="#" aria-label="category search result link"></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cm-popup cm-popup--search-suggestions-product cm-popup--search-suggestions">
-                                <ul class="cm-search-suggestions-product">
-                                    <li class="cm-search-suggestions-product__item clearfix" tabindex="-1">
-                                        <a class="cm-search-suggestions-product__item-link cm-search-suggestions__item-link" href="#" aria-label="product search result link">
-                                            <div class="cm-search-suggestions-product__item-image"></div>
-                                            <div class="cm-search-suggestions-product__item-headline"></div>
-                                            <div class="cm-search-suggestions-product__item-description"></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="cm-search-results">
-                                <button type="submit" tabindex="-1" class="btn-link btn btn-arrow btn-text-only" form="cm-search-header-form" onclick="$('#cm-search-header-form').find('input[name=tabSelected]').val(1);">
-<span><span class="text-wrapper">See all results</span></span>
-</button>
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div class="locale-selector-main">
                         <div class="modal C073-modal locale-selector fade" id="locale-selector-modal" tabindex="-1" role="dialog" data-options-url="/dynamic/fragment/locales/options/en-in/emerson" data-locale-switch-base-url="/webapp/wcs/stores/servlet/ChangeCountry" data-store-id="20151"
                             data-lang-id="-1002">
@@ -5297,7 +5094,7 @@ Select
 <svg>
 <path class="locale-icon" xmlns="http://www.w3.org/2000/svg" d="M8 0c1.89 0 3.628.656 4.997 1.752.354.273.678.58.974.913a7.92 7.92 0 0 1-.005.006A7.965 7.965 0 0 1 16 8a7.97 7.97 0 0 1-2.033 5.328l.004.004a8.008 8.008 0 0 1-5.722 2.664L8 16A8 8 0 1 1 8 0zM6.103 12.277l-.134.043c.35 1.03.824 1.79 1.364 2.137v-2.423a6.636 6.636 0 0 0-1.23.243zm2.564-.245v2.425c.54-.348 1.015-1.11 1.366-2.142a6.516 6.516 0 0 0-1.366-.283zm-3.86.787-.17.096c-.22.128-.43.27-.632.421.441.332.925.61 1.442.824a8.329 8.329 0 0 1-.64-1.34zm6.389-.01-.05.133a8.123 8.123 0 0 1-.594 1.218 6.633 6.633 0 0 0 1.452-.829 6.461 6.461 0 0 0-.808-.521zM4.014 8.668H1.366a6.64 6.64 0 0 0 1.645 3.755c.431-.347.9-.65 1.397-.9a14.52 14.52 0 0 1-.394-2.855zm10.62 0h-2.648a14.553 14.553 0 0 1-.392 2.848c.5.25.97.55 1.403.897a6.632 6.632 0 0 0 1.637-3.745zm-7.301-.001H5.347c.033.844.13 1.642.277 2.363a7.924 7.924 0 0 1 1.71-.334l-.001-2.029zm3.32 0H8.666v2.027c.592.048 1.164.16 1.712.33.146-.719.242-1.515.275-2.356zm-7.64-5.088-.096.108a6.638 6.638 0 0 0-1.55 3.647h2.647c.042-1.02.18-1.984.394-2.859a7.89 7.89 0 0 1-1.396-.896zm2.611 1.391-.026.133c-.133.687-.22 1.438-.251 2.231h1.986v-2.03a7.964 7.964 0 0 1-1.709-.334zm4.753.005c-.548.17-1.12.282-1.71.33l-.001 2.029h1.987a14.813 14.813 0 0 0-.276-2.359zm2.618-1.39-.069.057c-.413.323-.859.606-1.332.843.214.872.35 1.833.392 2.849h2.648a6.64 6.64 0 0 0-1.639-3.748zm-4.328-2.04v2.421a6.633 6.633 0 0 0 1.365-.28c-.35-1.033-.825-1.794-1.365-2.142zm-2.66 2.028-.037.108c.437.14.893.236 1.363.283v-2.42c-.52.336-.98 1.055-1.327 2.03zm4.546-1.732.024.041c.23.388.437.826.618 1.306.282-.153.552-.327.808-.518a6.637 6.637 0 0 0-1.45-.83zm-5.105 0-.094.039a6.66 6.66 0 0 0-1.348.782c.254.192.522.365.802.519.187-.495.401-.945.64-1.34z" ></path>
 </svg>
-<data class="locale-desktop-text">IN/EN</data>
+<data class="locale-desktop-text">Contact</data>
 <data class="locale-mobile-text">India (English)</data>
 </a>
                     </div>
@@ -5320,9 +5117,9 @@ Select
             <div class="H002-hero H002-hero-with-cta cm-container--carousel noLazyLoad">
                 <div class="content-wrapper overlay-theme-dark overlay-enable">
                     <div class="image-container">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTc3ODU3MCIgd2lkdGg9Ijk5OTk5OSI+CiAgPHJlY3QgaGVpZ2h0PSIxNzc4NTcwIiB3aWR0aD0iOTk5OTk5IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAiLz4KPC9zdmc+Cg==" alt="Emerson 2023 Annual Report"
-                            loading="lazy" class="cm-media cm-media--responsive cm-media--loading deferredImage" title="Advancing the World&#39;s Most Essential Industries" data-cm-responsive-media="[{&quot;name&quot;:&quot;portrait_ratio3x4&quot;,&quot;ratioWidth&quot;:3,&quot;ratioHeight&quot;:4,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/10012416/portrait_ratio3x4/320/427/4f347218fe7637dbfbe7779fbfdd4f92/AC0624EDD01971AFA042031437BEAE82/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;375&quot;:&quot;/resource/image/10012416/portrait_ratio3x4/375/500/4f347218fe7637dbfbe7779fbfdd4f92/BE5E1790C417C13F1E659D9AF772DA94/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;414&quot;:&quot;/resource/image/10012416/portrait_ratio3x4/414/552/4f347218fe7637dbfbe7779fbfdd4f92/9286BFDA33735ED0DBF72A448A72E7C9/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;768&quot;:&quot;/resource/image/10012416/portrait_ratio3x4/768/1024/4f347218fe7637dbfbe7779fbfdd4f92/0891BA0417E57ABED081A3995C206238/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;portrait_ratio1x1&quot;,&quot;ratioWidth&quot;:1,&quot;ratioHeight&quot;:1,&quot;linksForWidth&quot;:{&quot;25&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/25/25/b47394a555018cb95579530db03d235e/943852288669AF414D5DC7E39E603961/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;50&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/50/50/b47394a555018cb95579530db03d235e/CE8A6D8B0376542E43481E6DC270EE00/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;97&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/97/97/b47394a555018cb95579530db03d235e/F205AF3982D2D070AA72DD8AC3D02CB4/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;100&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/100/100/b47394a555018cb95579530db03d235e/1E33897C30635EF0BD301D358B1C8AD2/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;110&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/110/110/b47394a555018cb95579530db03d235e/903E06F96E92A3513638DB57BC8E45DA/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;152&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/152/152/b47394a555018cb95579530db03d235e/5AD4B8D5CC636681504D0D8990CC5F3E/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;176&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/176/176/b47394a555018cb95579530db03d235e/1B292E0A1A71C611CF514A09AB30C922/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;207&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/207/207/b47394a555018cb95579530db03d235e/157F956BDD298C61711BB03DDA0DBE62/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;290&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/290/290/b47394a555018cb95579530db03d235e/845DD5B5C98512A6888C25EC22ED8340/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;345&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/345/345/b47394a555018cb95579530db03d235e/24207C19AFBF6B4FA625B76429C3AAF8/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;555&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/555/555/b47394a555018cb95579530db03d235e/98B4AB787293C802F91615151C8F2519/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1024&quot;:&quot;/resource/image/10012416/portrait_ratio1x1/1024/1024/b47394a555018cb95579530db03d235e/A2D06EB8BB245A2681B41E9488D39623/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio4x3&quot;,&quot;ratioWidth&quot;:4,&quot;ratioHeight&quot;:3,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/320/240/1e3eb28045f69014ed50a009bfe203be/C4EB63820029F3D1B10C7FC3822DEBAD/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;375&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/375/281/1e3eb28045f69014ed50a009bfe203be/379BB11D6880841B0F624B44E64F03DC/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;414&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/414/310/1e3eb28045f69014ed50a009bfe203be/3DA4753B256F96DDD4202D75C5964D39/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;500&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/500/375/1e3eb28045f69014ed50a009bfe203be/E8E8B31F687B9A0BBE8FCDED70166B89/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;576&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/576/432/1e3eb28045f69014ed50a009bfe203be/E918AF181C54AA27A1722A23ABC4AA9A/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1000&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/1000/750/1e3eb28045f69014ed50a009bfe203be/14DC3BFF7A21371B3BD9F2FDD58E3F7E/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1200&quot;:&quot;/resource/image/10012416/landscape_ratio4x3/1200/900/1e3eb28045f69014ed50a009bfe203be/EE4EEC8C00FF77D3C36EC765C3243672/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio16x9&quot;,&quot;ratioWidth&quot;:16,&quot;ratioHeight&quot;:9,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/320/180/80a7a4f6a46ce9012fa529f7f7728529/C92E2491398B4D71E14810FCAF7E9D61/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;375&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/375/211/80a7a4f6a46ce9012fa529f7f7728529/4326162F8EB510AD04CD16BEE520F6B8/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;414&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/414/233/80a7a4f6a46ce9012fa529f7f7728529/3115E6A6C17769927B1B5D9F1A973560/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;600&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/600/338/80a7a4f6a46ce9012fa529f7f7728529/492F10E1F5094B71A05E365877ACB55B/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1200&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/1200/675/80a7a4f6a46ce9012fa529f7f7728529/1D188DA33E78C1BB1A4C8683C7D1B7F6/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1920&quot;:&quot;/resource/image/10012416/landscape_ratio16x9/1920/1080/80a7a4f6a46ce9012fa529f7f7728529/F3151B660CEEF35139F09797AEE20CB1/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio2x1&quot;,&quot;ratioWidth&quot;:2,&quot;ratioHeight&quot;:1,&quot;linksForWidth&quot;:{&quot;120&quot;:&quot;/resource/image/10012416/landscape_ratio2x1/120/60/89afce3b68d2c47d4355d17fee090d50/49D0AEF4FFE4499ACB3AA94927608D6A/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;370&quot;:&quot;/resource/image/10012416/landscape_ratio2x1/370/185/89afce3b68d2c47d4355d17fee090d50/184AD7D73904AC5A0DF7B09C8AE0D4C4/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;380&quot;:&quot;/resource/image/10012416/landscape_ratio2x1/380/190/89afce3b68d2c47d4355d17fee090d50/DE986EA814B534AC56FD013C8A1B431F/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;767&quot;:&quot;/resource/image/10012416/landscape_ratio2x1/767/384/89afce3b68d2c47d4355d17fee090d50/0E15B9864593383D917D90D081579E90/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1180&quot;:&quot;/resource/image/10012416/landscape_ratio2x1/1180/590/89afce3b68d2c47d4355d17fee090d50/22F498403E21359ABEAAA756DF3A6772/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio5x2&quot;,&quot;ratioWidth&quot;:5,&quot;ratioHeight&quot;:2,&quot;linksForWidth&quot;:{&quot;188&quot;:&quot;/resource/image/10012416/landscape_ratio5x2/188/75/68e944f0867fb74cab98b531eec1dd4d/60CB7D6999D76D3FF1C3C59CD4EB9D0B/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;768&quot;:&quot;/resource/image/10012416/landscape_ratio5x2/768/307/68e944f0867fb74cab98b531eec1dd4d/6C2ADC879472F1330DECA10384D1A0C8/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1000&quot;:&quot;/resource/image/10012416/landscape_ratio5x2/1000/400/68e944f0867fb74cab98b531eec1dd4d/6B81D72E2B99D4F88BB195E38C373564/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1024&quot;:&quot;/resource/image/10012416/landscape_ratio5x2/1024/410/68e944f0867fb74cab98b531eec1dd4d/4596CF1B20C42365EEB8BF40223A9E0A/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1600&quot;:&quot;/resource/image/10012416/landscape_ratio5x2/1600/640/68e944f0867fb74cab98b531eec1dd4d/C07F6889636E73885F25F136B9471730/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio8x3&quot;,&quot;ratioWidth&quot;:8,&quot;ratioHeight&quot;:3,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/10012416/landscape_ratio8x3/320/120/823e8b390bce8232d4adfcd14211b8bf/DD9C5ED2A7B96A1A60FF8CC2A815D201/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1600&quot;:&quot;/resource/image/10012416/landscape_ratio8x3/1600/600/823e8b390bce8232d4adfcd14211b8bf/FF54FA091FA50BE02D5C261F332067C6/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio4x1&quot;,&quot;ratioWidth&quot;:4,&quot;ratioHeight&quot;:1,&quot;linksForWidth&quot;:{&quot;240&quot;:&quot;/resource/image/10012416/landscape_ratio4x1/240/60/316c963361350346fc47fbb8c4373c95/4BEAFA980EA2E8B2071E3AC4A03339D1/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1200&quot;:&quot;/resource/image/10012416/landscape_ratio4x1/1200/300/316c963361350346fc47fbb8c4373c95/60BD31EB8C170B50D51ACB08D9384044/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1400&quot;:&quot;/resource/image/10012416/landscape_ratio4x1/1400/350/316c963361350346fc47fbb8c4373c95/5D34744427987FEAEE16FD198F7F15B1/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;1600&quot;:&quot;/resource/image/10012416/landscape_ratio4x1/1600/400/316c963361350346fc47fbb8c4373c95/B54352BF6E9AF44E1233AE31E1B8E94D/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;,&quot;2400&quot;:&quot;/resource/image/10012416/landscape_ratio4x1/2400/600/316c963361350346fc47fbb8c4373c95/B682A998A5283F9AE943EE2B02C43679/h002%20-%20emerson%20-%20solving%20the%20unsolvable.jpg&quot;}}]">
-                    </div>
+                        <img src="./resource/image/greentin/hero_section_bg.jpg" alt="Emerson 2023 Annual Report"
+                        loading="lazy" class="cm-media cm-media--responsive cm-media--loading deferredImage" title="Advancing the World's Most Essential Industries">
+                        </div>
                     <div class="padded-container">
                         <div class="content">
                             <h1>Advancing the World&#39;s Most Essential Industries</h1>
@@ -5332,12 +5129,12 @@ Select
                             </div>
                             <div class="cta-buttons _h002-cta-buttons">
                                 <!-- This link is currently not providing a DDX tag, because it is always called by CMTeasable.asCTA.ftl -->
-                                <a class="cta-btn cta--primary cta--internal" href="/en-in/expertise/automation/boundless-automation" aria-label="Learn more about Boundless Automation">
+                                <a class="cta-btn cta--primary cta--internal btn-br" href="/en-in/expertise/automation/boundless-automation" aria-label="Learn more about Boundless Automation" >
 Learn More
 <span class="cta-icon"></span>
 </a>
                                 <!-- This link is currently not providing a DDX tag, because it is always called by CMTeasable.asCTA.ftl -->
-                                <a class="cta-btn cta--primary cta--internal" href="/en-in/esg" aria-label=" Our Tech in Action">
+                                <a class="cta-btn cta--primary cta--internal btn-br" href="/en-in/esg" aria-label=" Our Tech in Action">
 Our Tech in Action
 <span class="cta-icon"></span>
 </a> </div>
@@ -5372,31 +5169,7 @@ Our Tech in Action
                         </div>
                     </div>
                 </div>
-                <div class="se008d-wrapper gray-background ">
-                    <div class="inline-search se008d inline-search-bar">
-                        <div class="padded-container">
-                            <form id="cm-inline-search-form" class="cm-search cm-inline-search--form" method="post" action="/dynamic/en-in/wcsextendedsearch" role="search" autocomplete="false">
-                                <div class="search-container">
-                                    <div class="search-input-wrapper">
-                                        <label for="searchterm" class="cm-search__label sr-only"></label>
-                                        <input class="search_input" id="InlineSimpleSearchForm_SearchTerm" type="search" name="query" value="" placeholder="Enter a product search term or model number" autocomplete="off" />
-                                        <input type="hidden" name="cmBusinessSegmentId" value="" />
-                                        <input type="hidden" name="wcsBusinessSegmentId" value="" />
-                                        <input type="hidden" name="_CSRFToken" value="" />
-                                        <input type="hidden" name="tabSelected" value="1" />
-                                    </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-primary btn-arrow">
-<span class="glyphicon glyphicon-search" >
-<span class="text-wrapper"></span>
-</span>
-</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="C019-brands-grid ">
                     <div class="padded-container">
                         <div class="row">
@@ -6199,9 +5972,13 @@ Download the 2023 Sustainability Report
                 <div class="C007-compelling-story gray-background ">
                     <a href="/en-in/innovations/smarter-software-cleaner-power" class="cta-video">
                         <div class="image-container">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Picture of a city landscape with light streaks and movement " loading="lazy" class="cm-media cm-media--responsive cm-media--loading "
-                                title="Picture - Go Light" data-cm-responsive-media="[{&quot;name&quot;:&quot;portrait_ratio3x4&quot;,&quot;ratioWidth&quot;:3,&quot;ratioHeight&quot;:4,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/8513788/portrait_ratio3x4/320/427/e9c8b4fd9385527cb2af482464d5a4d2/FA894B7601D0633487139F2348FD00C1/picture%20-%20go%20light.jpg&quot;,&quot;375&quot;:&quot;/resource/image/8513788/portrait_ratio3x4/375/500/e9c8b4fd9385527cb2af482464d5a4d2/3818DCDF6914A40C9C87C2FFED5E0CC2/picture%20-%20go%20light.jpg&quot;,&quot;414&quot;:&quot;/resource/image/8513788/portrait_ratio3x4/414/552/e9c8b4fd9385527cb2af482464d5a4d2/29D3771321C968DEE1A304345C22E3C5/picture%20-%20go%20light.jpg&quot;,&quot;768&quot;:&quot;/resource/image/8513788/portrait_ratio3x4/768/1024/e9c8b4fd9385527cb2af482464d5a4d2/F7C7305488B94E1ABEA775318CFCF445/picture%20-%20go%20light.jpg&quot;}},{&quot;name&quot;:&quot;landscape_ratio16x9&quot;,&quot;ratioWidth&quot;:16,&quot;ratioHeight&quot;:9,&quot;linksForWidth&quot;:{&quot;320&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/320/180/971e3a2e13296b47bb2547d1fcf3f17a/9B9E54BEE5F5032687CC03CA3E7E09E7/picture%20-%20go%20light.jpg&quot;,&quot;375&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/375/211/971e3a2e13296b47bb2547d1fcf3f17a/AB06F3A693AF6873F2A591839ED85DE9/picture%20-%20go%20light.jpg&quot;,&quot;414&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/414/233/971e3a2e13296b47bb2547d1fcf3f17a/8720E0C94EBC8D306EAA4035F44527D9/picture%20-%20go%20light.jpg&quot;,&quot;600&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/600/338/971e3a2e13296b47bb2547d1fcf3f17a/3F6A6A358AC7094BE7481D2CD0CE1694/picture%20-%20go%20light.jpg&quot;,&quot;1200&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/1200/675/971e3a2e13296b47bb2547d1fcf3f17a/9C351BDE8FFCB3CF9D75570A3B7814E4/picture%20-%20go%20light.jpg&quot;,&quot;1920&quot;:&quot;/resource/image/8513788/landscape_ratio16x9/1920/1080/971e3a2e13296b47bb2547d1fcf3f17a/58F8208A6006B71324828D6EEFFB14D4/picture%20-%20go%20light.jpg&quot;}}]">
-                        </div>
+                            <img src="./resource/image/greentin/footer_bg.jpg" 
+                            style="height: auto; width: 100%;"
+                            alt="Picture of a city landscape with light streaks and movement" 
+                            loading="lazy" 
+                            class="cm-media cm-media--responsive cm-media--loading" 
+                            title="Picture - Go Light">
+                       </div>
                         <div class="overlay">
                             <div class="padded-container">
                                 <div class="content">
@@ -6238,7 +6015,7 @@ Download the 2023 Sustainability Report
                     <div class="row">
                         <div class="brand-content-sidebar-logo">
                             <div class="image-container">
-                                <img src="" alt="Emerson logo" loading="lazy" class="cm-media deferredImage" data-src="/resource/blob/emerson-logo-data-9861466.png" title="">
+                                <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="/resource/blob/emerson-logo-data-9861466.png" title="">
                             </div>
                         </div>
                         <div class="global-footer sidebar-container">
@@ -6303,22 +6080,22 @@ Download the 2023 Sustainability Report
                                         <div class="footer-social-icon">
                                             <a href="https://www.facebook.com/EmersonCorporate/" aria-label="" target="_blank">
                                                 <div class="image-container">
-                                                    <img src="" alt="Emerson logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-facebook-data-9860368.png" title="">
+                                                    <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-facebook-data-9860368.png" title="">
                                                 </div>
                                             </a>
                                             <a href="https://www.linkedin.com/company/emerson" aria-label="" target="_blank">
                                                 <div class="image-container">
-                                                    <img src="" alt="Emerson logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-linkedin-data-9860378.png" title="">
+                                                    <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-linkedin-data-9860378.png" title="">
                                                 </div>
                                             </a>
                                             <a href="https://twitter.com/Emerson_News" aria-label="" target="_blank">
                                                 <div class="image-container">
-                                                    <img src="" alt="Emerson logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-x-data-9860370.png" title="">
+                                                    <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-x-data-9860370.png" title="">
                                                 </div>
                                             </a>
                                             <a href="https://videos.emerson.com/" aria-label="" target="_blank">
                                                 <div class="image-container">
-                                                    <img src="" alt="Emerson logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-youtube-data-9860372.png" title="">
+                                                    <img src="" alt="GreenTin logo" loading="lazy" class="cm-media deferredImage" data-src="https://www.emerson.com/resource/blob/footer-social-icon-youtube-data-9860372.png" title="">
                                                 </div>
                                             </a>
                                         </div>
