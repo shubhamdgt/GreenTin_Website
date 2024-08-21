@@ -1,0 +1,335 @@
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/resource/blob/noto-sans-v27-latin-100-woff2-data-8601652.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-100-woff-data-8601650.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/resource/blob/noto-sans-v27-latin-100italic-woff2-data-8601656.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-100italic-woff-data-8601654.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/resource/blob/noto-sans-v27-latin-200-woff2-data-8601660.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-200-woff-data-8601658.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/resource/blob/noto-sans-v27-latin-200italic-woff2-data-8601672.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-200italic-woff-data-8601662.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/resource/blob/noto-sans-v27-latin-300-woff2-data-8601666.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-300-woff-data-8601664.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/resource/blob/noto-sans-v27-latin-300italic-woff2-data-8601670.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-300italic-woff-data-8601668.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/resource/blob/noto-sans-v27-latin-regular-woff2-data-8601792.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-regular-woff-data-8601790.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/resource/blob/noto-sans-v27-latin-italic-woff2-data-8601788.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-italic-woff-data-8601786.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/resource/blob/noto-sans-v27-latin-500-woff2-data-8601678.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-500-woff-data-8601674.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/resource/blob/noto-sans-v27-latin-500italic-woff2-data-8601680.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-500italic-woff-data-8601676.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/resource/blob/noto-sans-v27-latin-600-woff2-data-8601684.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-600-woff-data-8601682.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/resource/blob/noto-sans-v27-latin-600italic-woff2-data-8601688.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-600italic-woff-data-8601686.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/resource/blob/noto-sans-v27-latin-700-woff2-data-8601692.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-700-woff-data-8601690.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 700;
+    src: url(/resource/blob/noto-sans-v27-latin-700italic-woff2-data-8601696.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-700italic-woff-data-8601694.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 800;
+    src: url(/resource/blob/noto-sans-v27-latin-800-woff2-data-8601700.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-800-woff-data-8601698.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 800;
+    src: url(/resource/blob/noto-sans-v27-latin-800italic-woff2-data-8601704.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-800italic-woff-data-8601702.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 900;
+    src: url(/resource/blob/noto-sans-v27-latin-900-woff2-data-8601710.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-900-woff-data-8601706.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 900;
+    src: url(/resource/blob/noto-sans-v27-latin-900italic-woff2-data-8601712.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-900italic-woff-data-8601708.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 100;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-100-woff2-data-8601716.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-100-woff-data-8601714.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 100;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-100italic-woff2-data-8601718.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-100italic-woff-data-8601720.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 200;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-200italic-woff2-data-8601728.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-200italic-woff-data-8601726.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 200;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-200-woff2-data-8601724.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-200-woff-data-8601722.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-300-woff2-data-8601732.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-300-woff-data-8601730.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 300;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-300italic-woff2-data-8601736.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-300italic-woff-data-8601734.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-regular-woff2-data-8601784.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-regular-woff-data-8601782.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 400;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-italic-woff2-data-8601780.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-italic-woff-data-8601778.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-500-woff2-data-8601740.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-500-woff-data-8601738.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 500;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-500italic-woff2-data-8601744.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-500italic-woff-data-8601742.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 600;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-600-woff2-data-8601748.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-600-woff-data-8601746.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 600;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-600italic-woff2-data-8601752.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-600italic-woff-data-8601750.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-700-woff2-data-8601756.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-700-woff-data-8601754.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 700;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-700italic-woff2-data-8601760.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-700italic-woff-data-8601758.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 800;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-800-woff2-data-8601766.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-800-woff-data-8601762.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 800;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-800italic-woff2-data-8601768.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-800italic-woff-data-8601764.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: italic;
+    font-weight: 900;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-900italic-woff2-data-8601776.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-900italic-woff-data-8601774.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 900;
+    src: local(""), url(/resource/blob/noto-sans-v27-latin-ext-900-woff2-data-8601772.woff2) format("woff2"), url(/resource/blob/noto-sans-v27-latin-ext-900-woff-data-8601770.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 100;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-100-woff2-data-8601604.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-100-woff-data-8601602.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-regular-woff2-data-8601624.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-regular-woff-data-8601622.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-300-woff2-data-8601608.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-300-woff-data-8601606.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-500-woff2-data-8601612.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-500-woff-data-8601610.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 900;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-900-woff2-data-8601620.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-900-woff-data-8601618.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url(/resource/blob/noto-sans-jp-v42-japanese-700-woff2-data-8601616.woff2) format("woff2"), url(/resource/blob/noto-sans-jp-v42-japanese-700-woff-data-8601614.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 100;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-100-woff2-data-8601628.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-100-woff-data-8601626.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 300;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-300-woff2-data-8601632.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-300-woff-data-8601630.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 400;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-regular-woff2-data-8601648.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-regular-woff-data-8601646.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 500;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-500-woff2-data-8601636.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-500-woff-data-8601634.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 700;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-700-woff2-data-8601640.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-700-woff-data-8601638.woff) format("woff")
+}
+
+@font-face {
+    font-family: Noto Sans KR;
+    font-style: normal;
+    font-weight: 900;
+    src: local(""), url(/resource/blob/noto-sans-kr-v27-korean-900-woff2-data-8601644.woff2) format("woff2"), url(/resource/blob/noto-sans-kr-v27-korean-900-woff-data-8601642.woff) format("woff")
+}
